@@ -1,6 +1,6 @@
 {
   "name": "@adilek/fetch-task",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "Add a plugin description",
   "main": "background-fetch",
   "typings": "background-fetch.d.ts",
