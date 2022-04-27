@@ -6,7 +6,8 @@ import { HomeComponent } from './home.component';
 
 const routes: Routes = [
    { path: '', redirectTo: '/home', pathMatch: 'full' },
-   { path: 'home', component: HomeComponent }
+   { path: 'home', component: HomeComponent },
+	{ path: 'nativescript-background-fetch', loadChildren: () => import('./plugin-demos/nativescript-background-fetch.module').then(m => m.NativescriptBackgroundFetchModule) }
 ];
 
 @NgModule({

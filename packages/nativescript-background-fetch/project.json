@@ -1,0 +1,72 @@
+{
+  "root": "packages/nativescript-background-fetch",
+  "projectType": "library",
+  "sourceRoot": "packages/nativescript-background-fetch",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "options": {
+        "outputPath": "dist/packages/nativescript-background-fetch",
+        "tsConfig": "packages/nativescript-background-fetch/tsconfig.json",
+        "packageJson": "packages/nativescript-background-fetch/package.json",
+        "main": "packages/nativescript-background-fetch/index.d.ts",
+        "assets": [
+          "packages/nativescript-background-fetch/*.md",
+          "packages/nativescript-background-fetch/index.d.ts",
+          "LICENSE",
+          {
+            "glob": "**/*",
+            "input": "packages/nativescript-background-fetch/platforms/",
+            "output": "./platforms/"
+          }
+        ],
+        "dependsOn": [
+          {
+            "target": "build.all",
+            "projects": "dependencies"
+          }
+        ]
+      }
+    },
+    "build.all": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "commands": [
+          "node tools/scripts/build-finish.ts nativescript-background-fetch"
+        ],
+        "parallel": false
+      },
+      "outputs": [
+        "dist/packages/nativescript-background-fetch"
+      ],
+      "dependsOn": [
+        {
+          "target": "build.all",
+          "projects": "dependencies"
+        },
+        {
+          "target": "build",
+          "projects": "self"
+        }
+      ]
+    },
+    "focus": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "commands": [
+          "nx g @nativescript/plugin-tools:focus-packages nativescript-background-fetch"
+        ],
+        "parallel": false
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "packages/nativescript-background-fetch/**/*.ts"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

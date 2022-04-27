@@ -6,7 +6,16 @@
     <ScrollView class="h-full">
       <StackLayout>
         <Button text="add a package first" tap="{{ viewDemo }}" class="btn btn-primary view-demo"/>
+<Button text="nativescript-background-fetch" tap="{{ viewDemo }}" class="btn btn-primary view-demo"/>
       </StackLayout>
     </ScrollView>
+    <StackLayout 
+    	style="text-align:center;font-size:14;margin-top:20" 
+    >
+  		<Label text="Simulate a background-fetch event on a device" />
+  		<Label text="(insert &lt;your.application.id&gt;) (only works for sdk 21+:" />"
+    	<Label style="font-weight:bold" text="$ adb shell cmd jobscheduler run -f &lt;your.application.id&gt; 999
+" />
+  	</StackLayout>
   </StackLayout>
 </Page>

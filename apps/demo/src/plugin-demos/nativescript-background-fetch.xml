@@ -1,0 +1,25 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page">
+    <Page.actionBar>
+        <ActionBar title="nativescript-background-fetch" icon="" class="action-bar">
+        </ActionBar>
+    </Page.actionBar>
+    <StackLayout class="p-20">
+        <ScrollView class="h-full">
+          <StackLayout>
+    <Label text="Background Fetch" class="title"/>
+    <Label text="{{ message }}" class="message" textWrap="true"/>
+
+   
+    <StackLayout 
+    	style="text-align:center;font-size:14;margin-top:20" 
+    	visibility="{{platform.isAndroid ? 'visible' : 'collapse'}}">
+  		<Label text="Simulate a background-fetch event on a device" />
+  		<Label text="(insert &lt;your.application.id&gt;) (only works for sdk 21+:" />"
+    	<Label style="font-weight:bold" text="$ adb shell cmd jobscheduler run -f &lt;your.application.id&gt; 999
+" />
+  	</StackLayout>
+
+          </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</Page>
