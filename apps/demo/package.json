@@ -5,7 +5,7 @@
   "repository": "<fill-your-repository-here>",
   "dependencies": {
     "@nativescript/core": "file:../../node_modules/@nativescript/core",
-    "@adilek/nativescript-background-fetch": "file:../../packages/nativescript-background-fetch"
+    "@adilek/fetch-task": "file:../../packages/fetch-task"
   },
   "devDependencies": {
     "@nativescript/android": "~8.2.0",

@@ -29,8 +29,8 @@
       "@adilek/*": [
         "packages/*"
       ],
-      "@adilek/nativescript-background-fetch": [
-        "packages/nativescript-background-fetch/index.d.ts"
+      "@adilek/fetch-task": [
+        "packages/fetch-task/index.d.ts"
       ]
     }
   },

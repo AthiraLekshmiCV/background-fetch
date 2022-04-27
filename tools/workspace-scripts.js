@@ -63,11 +63,11 @@ module.exports = {
     // packages
     // build output is always in dist/packages
     '@adilek': {
-      // @adilek/nativescript-background-fetch
-			'nativescript-background-fetch': {
+      // @adilek/fetch-task
+			'fetch-task': {
 				build: {
-					script: 'nx run nativescript-background-fetch:build.all',
-					description: '@adilek/nativescript-background-fetch: Build',
+					script: 'nx run fetch-task:build.all',
+					description: '@adilek/fetch-task: Build',
 				},
 			},
 			'build-all': {
@@ -80,9 +80,9 @@ module.exports = {
       description: '_____________  Focus (VS Code supported)  _____________',
     },
     focus: {
-      'nativescript-background-fetch': {
-				script: 'nx run nativescript-background-fetch:focus',
-				description: 'Focus on @adilek/nativescript-background-fetch',
+      'fetch-task': {
+				script: 'nx run fetch-task:focus',
+				description: 'Focus on @adilek/fetch-task',
 			},
 			reset: {
         script: 'nx g @adilek/plugin-tools:focus-packages',

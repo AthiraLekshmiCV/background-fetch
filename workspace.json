@@ -3,6 +3,6 @@
   "projects": {
     "demo": "apps/demo",
     "demo-angular": "apps/demo-angular",
-    "nativescript-background-fetch": "packages/nativescript-background-fetch"
+    "fetch-task": "packages/fetch-task"
   }
 }

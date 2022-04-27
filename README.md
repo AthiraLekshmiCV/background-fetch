@@ -5,7 +5,7 @@ npm run setup
 npm start
 ```
 
-- [@adilek/nativescript-background-fetch](packages/nativescript-background-fetch/README.md)
+- [@adilek/fetch-task](packages/fetch-task/README.md)
 
 # How to use?
 

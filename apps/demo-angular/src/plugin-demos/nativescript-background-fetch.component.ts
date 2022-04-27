@@ -1,10 +1,10 @@
 import { Component, NgZone } from '@angular/core';
 import { DemoSharedNativescriptBackgroundFetch } from '@demo/shared';
-import { } from '@adilek/nativescript-background-fetch';
+import { } from '@adilek/fetch-task';
 
 @Component({
-	selector: 'demo-nativescript-background-fetch',
-	templateUrl: 'nativescript-background-fetch.component.html',
+	selector: 'demo-fetch-task',
+	templateUrl: 'fetch-task.component.html',
 })
 export class NativescriptBackgroundFetchComponent {
   

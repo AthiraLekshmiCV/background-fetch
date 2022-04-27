@@ -1,22 +1,22 @@
 {
-  "root": "packages/nativescript-background-fetch",
+  "root": "packages/fetch-task",
   "projectType": "library",
-  "sourceRoot": "packages/nativescript-background-fetch",
+  "sourceRoot": "packages/fetch-task",
   "targets": {
     "build": {
       "executor": "@nrwl/js:tsc",
       "options": {
-        "outputPath": "dist/packages/nativescript-background-fetch",
-        "tsConfig": "packages/nativescript-background-fetch/tsconfig.json",
-        "packageJson": "packages/nativescript-background-fetch/package.json",
-        "main": "packages/nativescript-background-fetch/index.d.ts",
+        "outputPath": "dist/packages/fetch-task",
+        "tsConfig": "packages/fetch-task/tsconfig.json",
+        "packageJson": "packages/fetch-task/package.json",
+        "main": "packages/fetch-task/index.d.ts",
         "assets": [
-          "packages/nativescript-background-fetch/*.md",
-          "packages/nativescript-background-fetch/index.d.ts",
+          "packages/fetch-task/*.md",
+          "packages/fetch-task/index.d.ts",
           "LICENSE",
           {
             "glob": "**/*",
-            "input": "packages/nativescript-background-fetch/platforms/",
+            "input": "packages/fetch-task/platforms/",
             "output": "./platforms/"
           }
         ],
@@ -32,12 +32,12 @@
       "executor": "@nrwl/workspace:run-commands",
       "options": {
         "commands": [
-          "node tools/scripts/build-finish.ts nativescript-background-fetch"
+          "node tools/scripts/build-finish.ts fetch-task"
         ],
         "parallel": false
       },
       "outputs": [
-        "dist/packages/nativescript-background-fetch"
+        "dist/packages/fetch-task"
       ],
       "dependsOn": [
         {
@@ -54,7 +54,7 @@
       "executor": "@nrwl/workspace:run-commands",
       "options": {
         "commands": [
-          "nx g @nativescript/plugin-tools:focus-packages nativescript-background-fetch"
+          "nx g @nativescript/plugin-tools:focus-packages fetch-task"
         ],
         "parallel": false
       }
@@ -63,7 +63,7 @@
       "executor": "@nrwl/linter:eslint",
       "options": {
         "lintFilePatterns": [
-          "packages/nativescript-background-fetch/**/*.ts"
+          "packages/fetch-task/**/*.ts"
         ]
       }
     }

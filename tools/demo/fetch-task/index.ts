@@ -1,9 +1,9 @@
 import { DemoSharedBase } from '../utils';
-import {  } from '@adilek/nativescript-background-fetch';
+import {  } from '@adilek/fetch-task';
 
 export class DemoSharedNativescriptBackgroundFetch extends DemoSharedBase {
 
   testIt() {
-    console.log('test nativescript-background-fetch!');
+    console.log('test fetch-task!');
   }
 }

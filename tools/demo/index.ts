@@ -1,2 +1,2 @@
 export * from './utils';
-export * from './nativescript-background-fetch';
+export * from './fetch-task';

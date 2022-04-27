@@ -2,7 +2,7 @@
   "main": "./src/main.ts",
   "dependencies": {
     "@nativescript/core": "file:../../node_modules/@nativescript/core",
-    "@adilek/nativescript-background-fetch": "file:../../dist/packages/nativescript-background-fetch"
+    "@adilek/fetch-task": "file:../../dist/packages/fetch-task"
   },
   "devDependencies": {
     "@nativescript/android": "~8.2.0",

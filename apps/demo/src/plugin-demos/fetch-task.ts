@@ -1,6 +1,6 @@
 import { Observable, EventData, Page } from '@nativescript/core';
 import { DemoSharedNativescriptBackgroundFetch } from '@demo/shared';
-import {BackgroundFetch } from '@adilek/nativescript-background-fetch';
+import {BackgroundFetch } from '@adilek/fetch-task';
 
 export function navigatingTo(args: EventData) {
 	const page = <Page>args.object;
