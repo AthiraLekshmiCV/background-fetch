@@ -1,6 +1,6 @@
 import { Component, NgZone } from '@angular/core';
 import { DemoSharedNativescriptBackgroundFetch } from '@demo/shared';
-import { } from '@myscope/nativescript-background-fetch';
+import { } from '@adilek/nativescript-background-fetch';
 
 @Component({
 	selector: 'demo-nativescript-background-fetch',

@@ -1,11 +1,11 @@
-# @myscope/\* plugins
+# @adilek/\* plugins
 
 ```
 npm run setup
 npm start
 ```
 
-- [@myscope/nativescript-background-fetch](packages/nativescript-background-fetch/README.md)
+- [@adilek/nativescript-background-fetch](packages/nativescript-background-fetch/README.md)
 
 # How to use?
 

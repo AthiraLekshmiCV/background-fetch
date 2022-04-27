@@ -26,10 +26,10 @@
       "@demo/shared": [
         "tools/demo/index.ts"
       ],
-      "@myscope/*": [
+      "@adilek/*": [
         "packages/*"
       ],
-      "@myscope/nativescript-background-fetch": [
+      "@adilek/nativescript-background-fetch": [
         "packages/nativescript-background-fetch/index.d.ts"
       ]
     }

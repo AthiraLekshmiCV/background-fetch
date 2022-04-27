@@ -1,5 +1,5 @@
 {
-  "name": "@myscope/nativescript-background-fetch",
+  "name": "@adilek/nativescript-background-fetch",
   "version": "1.0.0",
   "description": "Add a plugin description",
   "main": "background-fetch",

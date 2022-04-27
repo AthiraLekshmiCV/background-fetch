@@ -57,17 +57,17 @@ module.exports = {
       },
     },
     '⚙️': {
-      script: `npx cowsay "@myscope/* packages will keep your ⚙️ cranking"`,
-      description: '_____________  @myscope/*  _____________',
+      script: `npx cowsay "@adilek/* packages will keep your ⚙️ cranking"`,
+      description: '_____________  @adilek/*  _____________',
     },
     // packages
     // build output is always in dist/packages
-    '@myscope': {
-      // @myscope/nativescript-background-fetch
+    '@adilek': {
+      // @adilek/nativescript-background-fetch
 			'nativescript-background-fetch': {
 				build: {
 					script: 'nx run nativescript-background-fetch:build.all',
-					description: '@myscope/nativescript-background-fetch: Build',
+					description: '@adilek/nativescript-background-fetch: Build',
 				},
 			},
 			'build-all': {
@@ -82,10 +82,10 @@ module.exports = {
     focus: {
       'nativescript-background-fetch': {
 				script: 'nx run nativescript-background-fetch:focus',
-				description: 'Focus on @myscope/nativescript-background-fetch',
+				description: 'Focus on @adilek/nativescript-background-fetch',
 			},
 			reset: {
-        script: 'nx g @myscope/plugin-tools:focus-packages',
+        script: 'nx g @adilek/plugin-tools:focus-packages',
         description: 'Reset Focus',
       },
     },

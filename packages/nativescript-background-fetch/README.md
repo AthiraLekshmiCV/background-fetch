@@ -1,7 +1,7 @@
-# @myscope/nativescript-background-fetch
+# @adilek/nativescript-background-fetch
 
 ```javascript
-ns plugin add @myscope/nativescript-background-fetch
+ns plugin add @adilek/nativescript-background-fetch
 ```
 
 ## Usage

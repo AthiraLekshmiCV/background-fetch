@@ -1,5 +1,5 @@
 import { DemoSharedBase } from '../utils';
-import {  } from '@myscope/nativescript-background-fetch';
+import {  } from '@adilek/nativescript-background-fetch';
 
 export class DemoSharedNativescriptBackgroundFetch extends DemoSharedBase {
 
